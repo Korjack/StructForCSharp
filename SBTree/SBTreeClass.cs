@@ -7,6 +7,11 @@ public class SBTreeClass
 {
     public IntPtr Node;
 
+    public SBTreeClass()
+    {
+        Node = IntPtr.Zero;
+    }
+    
     public SBTreeClass(char data)
     {
         Node = SBT_CreateNode(data);
